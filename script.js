@@ -1,16 +1,16 @@
-function moveTitle(event) {
+function moveBody(event) {
     // Get the mouse position.
     var mouseX = event.clientX;
     var mouseY = event.clientY;
   
     // Get the title element.
-    var title = document.getElementById("title");
+    var body = document.getElementById("body");
   
     // Calculate the new position of the title.
-    var newX = mouseX - title.offsetWidth / 2;
-    var newY = mouseY - title.offsetHeight / 2;
+    var newX = mouseX - body.offsetWidth / 2;
+    var newY = mouseY - body.offsetHeight / 2;
   
     // Move the title to the new position.
-    title.style.left = newX + "px";
-    title.style.top = newY + "px";
+    body.style.left = newX + "px";
+    body.style.top = newY + "px";
   }
